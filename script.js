@@ -45,13 +45,13 @@ function checkWinner() {
 function setBoxValue(box) {
   if (turnO && box.innerText == "") {
     box.innerText = "O";
-    changeBg(turnO);
     turnO = false;
+    changeBg(turnO);
     
   } else if (turnO == false && box.innerText == "") {
     box.innerText = "X";
-    changeBg(turnO);
     turnO = true;
+    changeBg(turnO);
 
   }
   box.disabled = true;
@@ -62,8 +62,8 @@ function reset() {
     box.innerText = "";
     box.disabled = false;
     winnerBoard.innerText = "";
-    turnO=false;
     changeBg(turnO);
+    turnO=false;
      
   });
 }
