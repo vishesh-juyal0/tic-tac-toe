@@ -74,13 +74,14 @@ function setDisability(disable) {
   });
 }
 
-function changeBg(turnO){
-  if(turnO){
-    playerO.style.backgroundColor="#ada294"; //grey
-     playerX.style.backgroundColor="#61b500"; //green
-  }
-  else{
-    playerX.style.backgroundColor="#ada294"; //grey
-    playerO.style.backgroundColor="#61b500"; //green
+function changeBg(turnO) {
+  if (turnO) {
+    // O's turn => highlight O
+    playerO.style.backgroundColor = "#61b500"; // green
+    playerX.style.backgroundColor = "#ada294"; // grey
+  } else {
+    // X's turn => highlight X
+    playerX.style.backgroundColor = "#61b500"; // green
+    playerO.style.backgroundColor = "#ada294"; // grey
   }
 }
