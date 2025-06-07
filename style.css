@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  color: white;
+}
+body {
+  background: darkslategray;
+}
+.mainContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 380px;
+}
+.playerIcon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 40px;
+}
+.playerX,
+.playerO {
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  background-color: #ada294;
+  padding: 10px 10px;
+  align-items: center;
+}
+.playerIcon p {
+  color: white;
+}
+.box {
+  display: flex;
+  font-size: 70px;
+  color: cornsilk;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  border-color: transparent;
+}
+.box:hover {
+  background-color: #b9b5b0;
+  cursor: pointer;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+}
+.btnContainer button {
+  border-color: #0240d700;
+  background-color: brown;
+  color: white;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.btnContainer button:hover {
+  background-color: #e53a3a;
+  cursor: pointer;
+}
+.btnContainer p {
+  color: white;
+  font-size: 25px;
+  visibility: hidden;
+}
